@@ -1,0 +1,15 @@
+version: '3'
+services:
+  Brazil_Order_ayomide-api-deployment:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: Brazil_Order_ayomide-api-deployment
+    container_name: api-deployment-container
+    # volumes:
+    #   - ./data:/customer_orders_analysis/data
+    #   - ./customer_orders_analysis/entrypoint.sh:/customer_orders_analysis/entrypoint.sh
+    # entrypoint: ["/entrypoint.sh"]
+    # tty: true
+    # stdin_open: true
